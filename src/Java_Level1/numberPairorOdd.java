@@ -8,14 +8,14 @@ public class numberPairorOdd {
   
         public static void main( String[] args )
         {
-            int number;
+            double number;
             Scanner keyboard = new Scanner( System.in );
 
             System.out.print( "Enter your number: " );
-            number = keyboard.nextInt();
+            number = keyboard.nextDouble();
             while (number < 0) {
                 System.out.print("Negative numbers are not accepted. Try again: ");
-                number = keyboard.nextInt();
+                number = keyboard.nextDouble();
             }
             
             if ( number % 2 == 0 )
