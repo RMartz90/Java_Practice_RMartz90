@@ -16,11 +16,11 @@ public class Palindrome {
     public static boolean Palindrome(String word) {
         word = word.toLowerCase();
 
-        for (int i = 0, j = word.length()/2 - 1; i <= j; i++, j--) {
-            if (word.charAt(i) == word.charAt(j))
-                return true;}
+        for (int i = 0, j = word.length() - 1; i <= j; i++, j--) {
+            if (word.charAt(i) != word.charAt(j))
+                return false;}
 
-        return false;
+        return true;
 
     }
 }
